@@ -1,4 +1,4 @@
-package com.example.hariharank.bbcnewsapp;
+package com.example.s-wong.bbcnewsapp;
 
 import org.junit.Test;
 
