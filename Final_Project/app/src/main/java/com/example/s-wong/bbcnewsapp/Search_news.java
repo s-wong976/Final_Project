@@ -52,7 +52,7 @@ public class Search_news extends AppCompatActivity {
             public void onClick(View view) {
                 if (!TextUtils.isEmpty(search_text.getText().toString().trim())) {
                     if (Function.isNetworkAvailable(getApplicationContext())) {
-                        if (dataList.size() != 0){
+                        if (dataList.size() != 0) {
                             dataList.clear();
                         }
                         listNews.setEmptyView(loader);
@@ -62,6 +62,8 @@ public class Search_news extends AppCompatActivity {
                         Toast.makeText(getApplicationContext(), R.string.no_internet, Toast.LENGTH_LONG).show();
                     }
                 }
+
+                Snackbar.make(view, "Button Clicked", Snackbar.LENGTH_SHORT).show();
             }
         });
     }
